@@ -13,7 +13,6 @@ app.use(express.json());
 
 const uri = process.env.ATLAS_URI;
 mongoose.connect(uri,async(err)=>{if(err) throw err;
-    console.log("conncted to db")
 });
     
 const connection = mongoose.connection;
